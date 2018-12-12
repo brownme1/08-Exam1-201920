@@ -162,7 +162,16 @@ def problem3a(r, s):
           -- 4 cubed is    64, whose sum of digits is 10, which is NOT odd.
           -- 5 cubed is   125, whose sum of digits is  8, which is NOT odd.
     """
-    # -------------------------------------------------------------------------
+    count = r
+    for k in range(s):
+        r = r**3
+        if sum_of_digits(r) % 2 ==1:
+            True
+        else:
+            False
+
+
+    #
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     #
